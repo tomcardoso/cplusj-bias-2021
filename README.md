@@ -1,13 +1,14 @@
 # Investigating systemic bias in Canada’s prisons
 
-![The first page of an anonymous inmate's Custody Rating Scale form](https://assets.documentcloud.org/documents/7274424/pages/CRS-assessment-form-p1-large.gif)
-_The first page of an anonymous inmate's Custody Rating Scale form._
+![The first page of an anonymous inmate’s Custody Rating Scale form](https://assets.documentcloud.org/documents/7274424/pages/CRS-assessment-form-p1-large.gif)
+_The first page of an anonymous inmate’s Custody Rating Scale form._
 
-This is the repository for a talk on investigating systemic bias in Canada's federal prison risk assessments. The slides can be found here: https://tomcardoso.github.io/cplusj-bias-2021/
+This is the repository for a talk on investigating systemic bias in Canada’s federal prison risk assessments. The slides can be found here: https://tomcardoso.github.io/cplusj-bias-2021/
 
-This talk was originally given at the virtual [Computation + Journalism 2021](https://cj2021.northeastern.edu/) conference on February 19, 2021. Here's a brief description:
+This talk was originally given at the virtual [Computation + Journalism 2021](https://cj2021.northeastern.edu/) conference on February 19, 2021. Here’s a brief description:
 
 > In the fall of 2020, The Globe and Mail, a national newspaper in Canada, published an investigation into the risk scores assigned to federal inmates. These scores are used to assign security classifications, determine prisoners’ treatment programs and make parole decisions. By applying statistical modelling to a trove of correctional data obtained through a freedom of information request, the investigation revealed these scores are biased against Indigenous and Black inmates — two groups already grossly overrepresented in the federal prison system — and that they were likely becoming a self-fulfilling prophecy, with worse scores lowering a person’s chances of successfully reintegrating into society. In a later story, The Globe revealed these scores are also biased against women (particularly Indigenous ones), a fact Canada’s federal prison agency has been aware of since at least 2004. Since The Globe began publishing its stories on prison risk scores, a parliamentary study has been announced into systemic bias in correctional risk assessments, lawyers have cited the findings at parole hearings, and a class-action lawsuit has been filed against the federal government on behalf of tens of thousands of inmates.
+>
 > This session focuses on the power of marrying a standard journalistic freedom of information technique — requesting large government databases — with the use of a relatively simple statistical approach, logistic regression modelling, to unravel the impact of race and gender on complex human datasets.
 
 Links to stories in the series:

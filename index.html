@@ -74,12 +74,8 @@
 					<h1>Investigating systemic bias in Canada’s prisons</h1>
 				</section>
 
-				<!-- <section>
-					<h1><a href="https://bit.ly/2Yrdn10">bit.ly/2Yrdn10</a></h1>
-				</section> -->
-
 				<section>
-					<p>You can also find the GitHub repository for this presentation at:</p>
+					<p>You can find the GitHub repository for this presentation at:</p>
 					<p><a href="https://github.com/tomcardoso/cplusj-bias-2021">github.com/tomcardoso/cplusj-bias-2021</a></p>
 				</section>
 
@@ -103,18 +99,7 @@
 
 				<section>
 					<h3>Risk assessments</h3>
-					<ul>
-						<li>Standardized tests.</li>
-						<li>Designed to measure an inmate’s risk to the public and odds of being rehabilitated.</li>
-						<li>Everywhere in corrections. Murderers, fraudsters, etc.: everyone gets one.</li>
-						<li>Federally, used to classify, treat, and parole the 12,000 to 14,000 inmates in custody each year.</li>
-						<li><span class="highlight-burgundy"><strong>But: Evaluating risk is tricky. Tons of room for bias.</strong></span></li>
-					</ul>
-				</section>
-
-				<section>
-					<p>Though there are many risk tools and types of scores in federal prison, two are most important: <strong>security classification</strong> and the <strong>reintegration potential score</strong>.</p>
-					<div class="">
+					<div>
 						<div class="w30">
 							<img src="img/CRS-pg1.jpg" alt="" style=" height: auto;" />
 							<p class="small"><em>Custody Rating Scale</em></p>
@@ -131,6 +116,16 @@
 				</section>
 
 				<section>
+					<ul>
+						<li>Standardized tests.</li>
+						<li>Designed to measure an inmate’s risk to the public and odds of being rehabilitated.</li>
+						<li>Everywhere in corrections. Murderers, fraudsters, etc.: everyone gets one.</li>
+						<li>Federally, used to classify, treat, and parole the 12,000 to 14,000 inmates in federal custody each year.</li>
+						<li><span class="highlight-burgundy"><strong>But: Evaluating risk is tricky. Tons of room for bias.</strong></span></li>
+					</ul>
+				</section>
+
+				<section>
 					<h3>Issues in assessment</h3>
 					<ul>
 						<li>Highly subjective to the assessor</li>
@@ -141,37 +136,27 @@
 					</ul>
 				</section>
 
-				<section>
+				<section style="font-size: 0.9em;">
 					<h3>What we found</h3>
-					<p><em>After controlling for variables like age, gender, the severity of inmates’ offences and past contact with the criminal justice system…</em></p>
-					<p>Black men are roughly <span class="highlight-burgundy"><strong>24%</strong></span> more likely than white men to end up in maximum security at admission.</p>
-					<p>Indigenous men are roughly <span class="highlight-burgundy"><strong>30%</strong></span> more likely to have the worst reintegration score at any point.</p>
-					<p>Both are <span class="highlight-burgundy"><strong>less likely</strong></span> to reoffend after controlling for reintegration scores.</p>
-				</section>
-
-				<section>
-					<h3>Even worse for Indigenous women</h3>
-					<p>They’re roughly <span class="highlight-burgundy"><strong>64%</strong></span> more likely than white women to end up in maximum security at admission.</p>
-					<p>Also roughly <span class="highlight-burgundy"><strong>40%</strong></span> more likely to receive the worst reintegration score.</p>
-					<p>And, as an internal report we later obtained made clear: the government had warned Correctional Service Canada <strong>in 2004</strong> about bias in its risk scores.</p>
-				</section>
-
-				<section>
-					<h3>How did this come together?</h3>
 					<ul>
-						<li>More than 90 interviews with sources developed over a two-year period.</li>
-						<li>Hundreds of pages of inmate records, dozens of academic studies.</li>
-						<li>One big freedom of information request, for a massive CSC database of 50,000 inmates. 750,000 rows in all. <em>(If you’d like to learn about filing “data FOIs,” check out <a href="https://github.com/tomcardoso/foi-data-journalism">my other talk</a>.)</em></li>
+						<p style="text-align: left;"><em>Compared to white men, and after controlling for factors like age, offence severity and criminal history…</em></li>
+						<li><strong>Black men:</strong> roughly <span class="highlight-burgundy"><strong>24%</strong></span> more likely than white men to end up in maximum security.</p>
+						<li><strong>Indigenous men:</strong> roughly <span class="highlight-burgundy"><strong>30%</strong></span> more likely to have the worst reintegration score.</li>
+						<li><strong>Both:</strong> actually <span class="highlight-burgundy"><strong>less likely</strong></span> to reoffend after controlling for reintegration scores.</li>
+						<li>Even worse for <strong>Indigenous women</strong>.</li>
 					</ul>
 				</section>
 
-				<section>
-					<h3>What about the analysis process?</h3>
+				<!-- <p>And, as an internal report we later obtained made clear: the government had warned Correctional Service Canada <strong>in 2004</strong> about bias in its risk scores.</p> -->
+
+				<section style="font-size: 0.8em;">
+					<h3>How did this come together?</h3>
 					<ul>
-						<li>Started simple, summarizing the data.</li>
-						<li>Quickly realized that if I wanted to quantify the impact of race alone, I needed to somehow account for variations in age, gender, offence severity, etc.</li>
-						<li>Enter: statistical modelling! Multivariate logistic regressions, specifically.</li>
-						<li>All done using R, a statistical programming language, and The Globe’s data journalism template, <strong><a href="https://github.com/globeandmail/startr">startr</a></strong>. <em>(And a <strong>lot</strong> of help from statisticians and academics.)</em></li>
+						<li>A single freedom of information request, for a massive database of 50,000 inmates. 750,000 rows in all.</li>
+						<li>Went for broke. No one had attempted an FOI on this scale — academics, legal experts warned it couldn’t be done.</li>
+						<li>After some analysis, realized I needed a more complex approach to account for multiple variables.</li>
+						<li>Landed on a basic modelling technique, multivariate logistic regression.</li>
+						<li>Informed by traditional reporting: interviews with 90+ sources, reviewed hundreds of pages of inmate records, dozens of academic studies.</li>
 					</ul>
 				</section>
 
@@ -181,7 +166,7 @@
 						<li>Published first story on a Saturday morning. By Monday afternoon, the House of Commons’ public safety committee had announced a study of systemic racism in prison risk assessments.</li>
 						<li>Prime Minister acknowledged findings a few days later.</li>
 						<li>Lawyers using our reporting at parole hearings.</li>
-						<li>Just two weeks ago: Class-action human rights lawsuit filed against the federal government on behalf of tens of thousands of inmates.</em></li>
+						<li>Last month: Class-action human rights lawsuit filed against the federal government on behalf of tens of thousands of inmates.</em></li>
 					</ul>
 				</section>
 
@@ -190,13 +175,12 @@
 				</section>
 
 				<section>
-					<ul style="font-size: 0.8em;">
-						<li><strong>File big-picture, ambitious data FOIs.</strong> Most won’t work out… but a few will.</li>
-						<li><strong>Don’t be afraid to pivot.</strong> I did!</li>
-						<li><strong>Experiment with new techniques whenever you can.</strong> I learned how to model data for this story.</li>
-						<li><strong>Try to disprove your own findings.</strong> Especially on big stories.</li>
+					<ul style="font-size: 0.9em;">
+						<li><strong>File big-picture, ambitious data FOIs.</strong> Most won’t work out, but some will.</li>
+						<li><strong>Experiment with new techniques.</strong> Learned how to model data for this story.</li>
+						<li><strong>Constantly try to disprove your own findings.</strong> Especially on big stories.</li>
 						<li><strong>Write a methodology story.</strong> Be transparent about your process and analysis limitations. Most people won’t read it, but the ones who do will appreciate it.</li>
-						<li><strong>Data is just one tool.</strong> Never underestimate the importance of traditional reporting. You still need to find documents, build sources and pick up the phone.</li>
+						<li><strong>Data is just a tool.</strong> Still need to report. Find documents, build sources, pick up the phone, etc.</li>
 					</ul>
 				</section>
 
